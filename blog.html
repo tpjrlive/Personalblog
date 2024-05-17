@@ -5,7 +5,11 @@
     <meta charset="utf-8">
     <title>My Blog</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- Using a known working version of marked.js -->
+    <script src="https://cdn.jsdelivr.net/npm/marked@4.0.12/marked.min.js"></script>
+    <script>
+        console.log('Marked library loaded:', typeof marked !== 'undefined');
+    </script>
 </head>
 
 <body>
@@ -50,10 +54,17 @@
 
             posts.forEach(post => {
                 fetch(post)
-                    .then(response => response.text())
+                    .then(response => {
+                        console.log(`Fetching ${post}`, response);
+                        if (!response.ok) {
+                            throw new Error('Network response was not ok');
+                        }
+                        return response.text();
+                    })
                     .then(text => {
+                        console.log(`Fetched content for ${post}`, text);
                         const postElement = document.createElement('article');
-                        postElement.innerHTML = marked(text);
+                        postElement.innerHTML = marked.parse(text);  // Use marked.parse instead of marked(text)
                         postsContainer.appendChild(postElement);
                     })
                     .catch(error => console.error('Error fetching post:', error));
