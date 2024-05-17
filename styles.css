@@ -87,4 +87,50 @@ form button {
     background-color: #ff6600;
     color: #ffffff;
     border: none;
-    padding: 10px
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #e05500;
+}
+
+p {
+    margin: 20px 0;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+a {
+    color: #ff6600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #e05500;
+}
+
+article {
+    margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: 0 5%;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
