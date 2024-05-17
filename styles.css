@@ -112,3 +112,14 @@ main {
         height: 80px; /* Adjust smaller for mobile */
     }
 }
+
+/* Custom link styles for the homepage */
+a {
+    color: #1e90ff; /* Link color */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff6347; /* Link hover color */
+    text-decoration: underline;
+}
