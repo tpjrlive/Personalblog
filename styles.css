@@ -32,7 +32,7 @@ header {
 }
 
 header img {
-    height: 50px;
+    height: 80px;  /* Increased the logo size */
 }
 
 nav ul {
@@ -51,8 +51,6 @@ nav ul li a {
     text-decoration: none;
     color: #e0dbdb;
     padding: 10px 20px;
-    border: 1px solid #e0dbdb;
-    border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
 }
 
