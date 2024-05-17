@@ -39,34 +39,7 @@ a:hover {
 }
 
 main.welcome-section {
-    background-color: #1e1e1e;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     margin-top: 30px;
-}
-
-.highlight {
-    background-color: #2a2a2a;
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-
-.key-features {
-    background-color: #2a2a2a;
-    padding: 10px;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
-.key-features ul {
-    list-style: none;
-    padding: 0;
-}
-
-.key-features li {
-    background-color: #333;
-    padding: 10px;
-    margin-bottom: 5px;
-    border-radius: 5px;
 }
