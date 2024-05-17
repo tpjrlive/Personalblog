@@ -9,29 +9,21 @@
 
 <body>
 
-    <header>
-        <h1><img src="TPJRSTACKED.PNG" alt="logo"></h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id="nav-placeholder"></div>
 
     <main>
-        <h1>Get in Touch</h1>
+        <h1>Contact Me</h1>
+        <p>If you have any questions or would like to get in touch, please fill out the form below:</p>
         
         <form name="contact" method="POST" data-netlify="true">
             <p>
-                <label>Your First Name: <input type="text" name="name" /></label>
+                <label>Your First Name: <input type="text" name="name" required /></label>   
             </p>
             <p>
-                <label>Your Email: <input type="email" name="email" /></label>
+                <label>Your Email: <input type="email" name="email" required /></label>
             </p>
             <p>
-                <label>Message: <textarea name="message"></textarea></label>
+                <label>Message: <textarea name="message" required></textarea></label>
             </p>
             <p>
                 <button type="submit">Send</button>
@@ -39,6 +31,7 @@
         </form>
     </main>
 
+    <script src="load-nav.js"></script>
 </body>
 
 </html>
