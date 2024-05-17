@@ -111,6 +111,10 @@ main {
     header img {
         height: 80px; /* Adjust smaller for mobile */
     }
+
+    nav ul li a {
+        font-size: 1.2em; /* Increase the font size for mobile */
+    }
 }
 
 /* Custom link styles for the homepage */
