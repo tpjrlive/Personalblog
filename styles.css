@@ -32,7 +32,7 @@ header {
 }
 
 header img {
-    height: 80px;  /* Increased the logo size */
+    height: 80px;  /* Adjusted logo size */
 }
 
 nav ul {
@@ -50,7 +50,6 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #e0dbdb;
-    padding: 10px 20px;
     transition: background-color 0.3s, color 0.3s;
 }
 
@@ -73,7 +72,7 @@ a:hover {
     text-decoration: underline;
 }
 
-main.welcome-section {
+main {
     padding: 20px;
     border-radius: 8px;
     margin-top: 30px;
