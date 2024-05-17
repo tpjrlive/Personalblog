@@ -87,6 +87,12 @@ button:hover {
     background-color: #388e3c;
 }
 
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 @media (max-width: 768px) {
     body {
         margin: 0 5%;
