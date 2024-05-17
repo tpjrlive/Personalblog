@@ -113,13 +113,29 @@ main {
     }
 
     nav ul li a {
-        font-size: 20px; /* Increase the font size for mobile */
+        font-size: 18px; /* Increase the font size for mobile */
+    }
+
+    h1 {
+        font-size: 24px; /* Increase font size for h1 on mobile */
+    }
+
+    h2 {
+        font-size: 20px; /* Increase font size for h2 on mobile */
     }
 }
 
 @media (max-width: 480px) {
     nav ul li a {
-        font-size: 24px; /* Further increase the font size for smaller screens */
+        font-size: 20px; /* Further increase the font size for smaller screens */
+    }
+
+    h1 {
+        font-size: 26px; /* Further increase font size for h1 on smaller screens */
+    }
+
+    h2 {
+        font-size: 22px; /* Further increase font size for h2 on smaller screens */
     }
 }
 
