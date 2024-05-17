@@ -113,7 +113,7 @@ main {
     }
 
     nav ul li a {
-        font-size: 1.5em; /* Increase the font size for mobile */
+        font-size: 5vw; /* Increase the font size using viewport units for mobile */
     }
 }
 
